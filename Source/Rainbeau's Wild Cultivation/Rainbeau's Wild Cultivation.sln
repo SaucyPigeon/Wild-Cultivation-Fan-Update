@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbeau's Wild Cultivation-RW1.0", "Rainbeau's Wild Cultivation-RW1.0\Rainbeau's Wild Cultivation-RW1.0.csproj", "{D04FD50E-CAB2-4216-8C36-F51B3B4DC529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbeau's Wild Cultivation-RW1.1", "Rainbeau's Wild Cultivation-RW1.1\Rainbeau's Wild Cultivation-RW1.1.csproj", "{73980478-AB44-46A9-801B-AB664D36FA95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D04FD50E-CAB2-4216-8C36-F51B3B4DC529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04FD50E-CAB2-4216-8C36-F51B3B4DC529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04FD50E-CAB2-4216-8C36-F51B3B4DC529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04FD50E-CAB2-4216-8C36-F51B3B4DC529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73980478-AB44-46A9-801B-AB664D36FA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73980478-AB44-46A9-801B-AB664D36FA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73980478-AB44-46A9-801B-AB664D36FA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73980478-AB44-46A9-801B-AB664D36FA95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46CB99C5-F99A-4737-9971-BD2058ABE2B0}
+	EndGlobalSection
+EndGlobal
