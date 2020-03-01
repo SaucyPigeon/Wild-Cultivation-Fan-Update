@@ -2,6 +2,8 @@
   Changelog for "Rainbeau's Wild Cultivation"
 ---------------------------------------------------------------------------------
 
+For changes after 12/05/2018 by Saucy_Pigeon, please see: https://github.com/SaucyPigeon/Wild-Cultivation-Fan-Update/releases
+
 - 12/05/2018
 	- Changed the defNames for agave seeds and for the agave seed extraction
 	  recipe to match those from "Vegetable Garden," to prevent duplication if
