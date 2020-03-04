@@ -18,32 +18,19 @@
 	- PlantWildSmokeleaf (wild smokeleaf plant)
 	
 	*texture change by VGP Vegetable Garden
+
+	Note: some plants do not have an immatureGraphicPath already, so ensure
+	you correctly add or replace
 	
 	-->
 
+	<!-- Change main texPath -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>VGP Vegetable Garden</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<!--<success>Always</success>-->
 			<operations>
-			
-				<!-- Devilstrand -->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildDevilstrand"]/graphicData/texPath</xpath>
-					<value>
-						<texPath>Things/Plants/Devilstrand</texPath>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildDevilstrand"]/graphicData/immatureGraphicPath</xpath>
-					<value>
-						<immatureGraphicPath>Things/Immature/Devilstrand</immatureGraphicPath>
-					</value>
-				</li>
-
-			
 				<!-- Corn -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "PlantWildCorn"]/graphicData/texPath</xpath>
@@ -51,26 +38,14 @@
 						<texPath>Things/Plants/CornPlant</texPath>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildCorn"]/graphicData/immatureGraphicPath</xpath>
-					<value>
-						<immatureGraphicPath>Things/Immature/CornPlant</immatureGraphicPath>
-					</value>
-				</li>
 				
 				<!-- Cotton -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildCottton"]/graphicData/texPath</xpath>
+					<xpath>Defs/ThingDef[defName = "PlantWildCotton"]/graphicData/texPath</xpath>
 					<value>
 						<texPath>Things/Plants/CottonPlant</texPath>
 					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildCottton"]/graphicData/immatureGraphicPath</xpath>
-					<value>
-						<immatureGraphicPath>Things/Immature/CottonPlant</immatureGraphicPath>
-					</value>
-				</li>
+				</li>			
 				
 				<!-- Daylily -->
 				<li Class="PatchOperationReplace">
@@ -80,18 +55,19 @@
 					</value>
 				</li>
 				
+				<!-- Devilstrand -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "PlantWildDevilstrand"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Plants/Devilstrand</texPath>
+					</value>
+				</li>
 
 				<!-- Hops -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "PlantWildHops"]/graphicData/texPath</xpath>
 					<value>
 						<texPath>Things/Plants/HopsPlant</texPath>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildHops"]/graphicData/immatureGraphicPath</xpath>
-					<value>
-						<immatureGraphicPath>Things/Immature/HopsPlant</immatureGraphicPath>
 					</value>
 				</li>
 				
@@ -110,26 +86,15 @@
 						<texPath>Things/Plants/RicePlant</texPath>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildRice"]/graphicData/immatureGraphicPath</xpath>
-					<value>
-						<immatureGraphicPath>Things/Immature/RicePlant</immatureGraphicPath>
-					</value>
-				</li>
 				
 				<!-- Rose -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "PlantWildRose"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Plants/RosePlant</texPath>
+						<texPath>Things/Plants/Rose</texPath>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildRose"]/graphicData/immatureGraphicPath</xpath>
-					<value>
-						<immatureGraphicPath>Things/Immature/RosePlant</immatureGraphicPath>
-					</value>
-				</li>
+				
 			</operations>
 		</match>
 	</Operation>
