@@ -26,8 +26,23 @@
 			<li>VGP Vegetable Garden</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
+			<!--<success>Always</success>-->
 			<operations>
+			
+				<!-- Devilstrand -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "PlantWildDevilstrand"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Plants/Devilstrand</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "PlantWildDevilstrand"]/graphicData/immatureGraphicPath</xpath>
+					<value>
+						<immatureGraphicPath>Things/Immature/Devilstrand</immatureGraphicPath>
+					</value>
+				</li>
+
 			
 				<!-- Corn -->
 				<li Class="PatchOperationReplace">
@@ -65,19 +80,6 @@
 					</value>
 				</li>
 				
-				<!-- Devilstrand -->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildDevilstrand"]/graphicData/texPath</xpath>
-					<value>
-						<texPath>Things/Plants/Devilstrand</texPath>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PlantWildDevilstrand"]/graphicData/immatureGraphicPath</xpath>
-					<value>
-						<immatureGraphicPath>Things/Immature/Devilstrand</immatureGraphicPath>
-					</value>
-				</li>
 
 				<!-- Hops -->
 				<li Class="PatchOperationReplace">
@@ -128,8 +130,7 @@
 						<immatureGraphicPath>Things/Immature/RosePlant</immatureGraphicPath>
 					</value>
 				</li>
-				
-				</operations>
+			</operations>
 		</match>
 	</Operation>
 	
