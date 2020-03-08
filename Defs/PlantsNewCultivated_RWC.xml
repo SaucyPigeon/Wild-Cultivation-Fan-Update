@@ -239,14 +239,6 @@
 		</plant>
 	</ThingDef>
 	
-	<!-- "Dummy" seed definitions used if "Seeds Please!" isn't installed -->
-	
-	<ThingDef>
-		<defName>Seed_Agave</defName>
-		<label>nothing</label>
-		<thingClass>ThingWithComps</thingClass>
-	</ThingDef>
-
 	<!-- Actual seed defs used if "Seeds Please!" is installed -->
 
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
