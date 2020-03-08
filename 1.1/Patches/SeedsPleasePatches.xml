@@ -157,5 +157,19 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<!-- Need to add as patch, otherwise Seed_Agave will be null def. -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>SeedsPlease</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[defName = "ExtractSeed_Agave"]/products</xpath>
+			<value>
+				<Seed_Agave>1</Seed_Agave>
+			</value>
+		</match>
+	</Operation>
 
 </Patch>

@@ -26,7 +26,7 @@
 		<workSkill>Cooking</workSkill>
 		<workAmount>600</workAmount>
 		<products>
-			<Seed_Agave>1</Seed_Agave>
+			<!--<Seed_Agave>1</Seed_Agave>-->
 		</products>
 	</RecipeDef>
 	
