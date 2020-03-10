@@ -244,14 +244,16 @@
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>Seed_Agave</defName>
 		<label>agave seeds</label>
-		<plant>Plant_Agave</plant>
+		<sources>
+			<li>Plant_Agave</li>
+		</sources>
 	</SeedsPlease.SeedDef>
 	
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedBrambles</defName>
 		<label>bramble seeds</label>
-		<plant>PlantCultivatedBrambles</plant>
 		<sources>
+			<li>PlantCultivatedBrambles</li>
 			<li>Plant_Brambles</li>
 		</sources>
 		<statBases>
@@ -262,8 +264,8 @@
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedClivia</defName>
 		<label>clivia seeds</label>
-		<plant>PlantCultivatedClivia</plant>
 		<sources>
+			<li>PlantCultivatedClivia</li>
 			<li>Plant_Clivia</li>
 		</sources>
 		<statBases>
@@ -274,12 +276,12 @@
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedSaguaro</defName>
 		<label>saguaro cactus seeds</label>
-		<plant>Plant_SaguaroCactus</plant>
 		<statBases>
 			<MarketValue>12.0</MarketValue>
 		</statBases>
 		<sources>
 			<li>PlantCultivatedSaguaroCactus</li>
+			<li>Plant_SaguaroCactus</li>
 		</sources>
 	</SeedsPlease.SeedDef>
 

@@ -159,11 +159,11 @@
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedGlowstool</defName>
 		<label>glowstool seeds</label>
-		<plant>CultivatedGlowstool</plant>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
 		</statBases>
 		<sources>
+			<li>CultivatedGlowstool</li>
 			<li>Glowstool</li>
 		</sources>
 	</SeedsPlease.SeedDef>
@@ -171,11 +171,11 @@
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedAgarilux</defName>
 		<label>agarilux mushroom seeds</label>
-		<plant>CultivatedAgarilux</plant>
 		<statBases>
 			<MarketValue>12.0</MarketValue>
 		</statBases>
 		<sources>
+			<li>CultivatedAgarilux</li>
 			<li>Agarilux</li>
 		</sources>
 	</SeedsPlease.SeedDef>
@@ -183,11 +183,11 @@
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedBryolux</defName>
 		<label>bryolux seeds</label>
-		<plant>CultivatedBryolux</plant>
 		<statBases>
 			<MarketValue>6.0</MarketValue>
 		</statBases>
 		<sources>
+			<li>CultivatedBryolux</li>
 			<li>Bryolux</li>
 		</sources>
 	</SeedsPlease.SeedDef>
