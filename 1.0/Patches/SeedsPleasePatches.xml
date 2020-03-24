@@ -6,7 +6,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/SeedsPlease.SeedDef[defName = "SeedCorn"]</xpath>
+				<xpath>Defs/SeedsPlease.SeedDef[defName = "Seed_Corn"]</xpath>
 				<value>
 					<sources><li>PlantWildCorn</li></sources>
 				</value>
@@ -20,7 +20,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/SeedsPlease.SeedDef[defName = "SeedCotton"]</xpath>
+				<xpath>Defs/SeedsPlease.SeedDef[defName = "Seed_Cotton"]</xpath>
 				<value>
 					<sources><li>PlantWildCotton</li></sources>
 				</value>
@@ -34,7 +34,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/SeedsPlease.SeedDef[defName = "SeedDevilstrand"]</xpath>
+				<xpath>Defs/SeedsPlease.SeedDef[defName = "Seed_Devilstrand"]</xpath>
 				<value>
 					<sources><li>PlantWildDevilstrand</li></sources>
 				</value>
@@ -48,7 +48,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/SeedsPlease.SeedDef[defName = "SeedHaygrass"]</xpath>
+				<xpath>Defs/SeedsPlease.SeedDef[defName = "Seed_Haygrass"]</xpath>
 				<value>
 					<sources><li>PlantWildHaygrass</li></sources>
 				</value>
@@ -62,7 +62,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/SeedsPlease.SeedDef[defName = "SeedHops"]</xpath>
+				<xpath>Defs/SeedsPlease.SeedDef[defName = "Seed_Hops"]</xpath>
 				<value>
 					<sources><li>PlantWildHops</li></sources>
 				</value>
@@ -76,7 +76,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/SeedsPlease.SeedDef[defName = "SeedPotato"]</xpath>
+				<xpath>Defs/SeedsPlease.SeedDef[defName = "Seed_Potato"]</xpath>
 				<value>
 					<sources><li>PlantWildPotato</li></sources>
 				</value>
@@ -90,7 +90,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/SeedsPlease.SeedDef[defName = "SeedPsychoid"]</xpath>
+				<xpath>Defs/SeedsPlease.SeedDef[defName = "Seed_Psychoid"]</xpath>
 				<value>
 					<sources><li>PlantWildPsychoid</li></sources>
 				</value>
@@ -104,7 +104,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/SeedsPlease.SeedDef[defName = "SeedRice"]</xpath>
+				<xpath>Defs/SeedsPlease.SeedDef[defName = "Seed_Rice"]</xpath>
 				<value>
 					<sources><li>PlantWildRice</li></sources>
 				</value>
@@ -118,7 +118,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/SeedsPlease.SeedDef[defName = "SeedSmokeleaf"]</xpath>
+				<xpath>Defs/SeedsPlease.SeedDef[defName = "Seed_Smokeleaf"]</xpath>
 				<value>
 					<sources><li>PlantWildSmokeleaf</li></sources>
 				</value>
