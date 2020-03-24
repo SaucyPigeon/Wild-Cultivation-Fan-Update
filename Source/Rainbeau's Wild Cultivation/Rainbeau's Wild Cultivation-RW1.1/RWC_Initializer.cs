@@ -9,17 +9,21 @@ namespace RWC_Code
 	{
 		static RWC_Initializer()
 		{
-			var harmony = new Harmony("net.rainbeau.rimworld.mod.wildcultivation");
+			const string Id = "net.rainbeau.rimworld.mod.wildcultivation";
+			var harmony = new Harmony(Id);
 			harmony.Patch(AccessTools.Method(typeof(Designator_ZoneAdd_Growing), "CanDesignateCell"), new HarmonyMethod(typeof(Designator_ZoneAdd_Growing_RWC), "CanDesignateCellPrefix"), null);
 			harmony.Patch(AccessTools.Method(typeof(Designator_ZoneAdd_Growing), "CanDesignateCell"), null, new HarmonyMethod(typeof(Designator_ZoneAdd_Growing_RWC), "CanDesignateCellPostfix"));
+
 			LongEventHandler.QueueLongEvent(Setup, "LibraryStartup", false, null);
 		}
 
 		public static void Setup()
 		{
+			// Update wild cotton harvest to standard cotton
 			ThingDef.Named("PlantWildCotton").plant.harvestedThingDef = ThingDefOf.Plant_Cotton.plant.harvestedThingDef;
 			ThingDef.Named("PlantWildCotton").plant.harvestYield = ThingDefOf.Plant_Cotton.plant.harvestYield;
 
+			// Update wild devilstrand harvest to standard devilstrand
 			ThingDef.Named("PlantWildDevilstrand").plant.harvestedThingDef = ThingDefOf.Plant_Devilstrand.plant.harvestedThingDef;
 			ThingDef.Named("PlantWildDevilstrand").plant.harvestYield = ThingDefOf.Plant_Devilstrand.plant.harvestYield;
 		}
