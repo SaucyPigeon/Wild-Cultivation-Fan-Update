@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- Corn -->
+
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildCorn</defName>
 		<label>wild corn plant</label>
@@ -47,6 +49,8 @@
 		</plant>
 	</ThingDef>
 
+	<!-- Cotton -->
+
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildCotton</defName>
 		<label>wild cotton plant</label>
@@ -90,6 +94,8 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+
+	<!-- Daylily -->
 
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildDaylily</defName>
@@ -135,6 +141,8 @@
 		</plant>
 	</ThingDef>
 
+	<!-- Devilstrand -->
+
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildDevilstrand</defName>
 		<label>wild devilstrand</label>
@@ -179,6 +187,8 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+	
+	<!-- Haygrass -->
 
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildHaygrass</defName>
@@ -227,6 +237,8 @@
 		</plant>
 	</ThingDef>
 
+	<!-- Hops -->
+
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildHops</defName>
 		<label>wild hop plant</label>
@@ -270,6 +282,8 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+
+	<!-- Potato -->
 
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildPotato</defName>
@@ -316,6 +330,8 @@
 		</plant>
 	</ThingDef>
 
+	<!-- Psychoid -->
+
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildPsychoid</defName>
 		<label>wild psychoid plant</label>
@@ -358,6 +374,8 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+
+	<!-- Rice -->
 
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildRice</defName>
@@ -404,6 +422,8 @@
 		</plant>
 	</ThingDef>
 
+	<!-- Rose -->
+
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildRose</defName>
 		<label>wild rose</label>
@@ -447,6 +467,8 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>
+
+	<!-- Smokeleaf -->
 
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildSmokeleaf</defName>
