@@ -1,5 +1,7 @@
 ﻿<Patch>
 
+	<!-- Corn -->
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -11,6 +13,8 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<!-- Cotton -->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -24,6 +28,8 @@
 		</operations>
 	</Operation>
 
+	<!-- Devilstrand -->
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -36,6 +42,8 @@
 		</operations>
 	</Operation>
 
+	<!-- Haygrass -->
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -47,6 +55,8 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<!-- Hops -->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -59,6 +69,8 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<!-- Potato -->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -72,6 +84,8 @@
 		</operations>
 	</Operation>
 
+	<!-- Psychoid -->
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -84,6 +98,8 @@
 		</operations>
 	</Operation>
 
+	<!-- Rice -->
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -95,6 +111,8 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<!-- Smokeleaf -->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -107,6 +125,8 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<!-- Add recipe list to PlantProcessingTable if it does not exist already -->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -123,6 +143,8 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<!-- Add extract agave seed recipe -->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success> 
