@@ -160,6 +160,45 @@
 		</plant>
 	</ThingDef>
 	
+	<!-- Pincushion cactus -->
+	
+	<ThingDef ParentName="RWC_PlantBase">
+		<defName>PlantCultivatedPincushionCactus</defName>
+		<label>pincushion cactus</label>
+		<description>A short cactus. It is so named because it resembles a pincushion.</description>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/PincushionCactus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<hideAtSnowDepth>1</hideAtSnowDepth>
+		<altitudeLayer>Item</altitudeLayer>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<sowMinSkill>4</sowMinSkill>
+			<sowTags>
+				<!-- Ground sowtag added in patch for VGP compatibility -->
+				<li>Decorative</li>
+			</sowTags> 
+			<visualSizeRange>
+				<min>0.40</min>
+				<max>0.65</max>
+			</visualSizeRange>
+			<topWindExposure>0.0</topWindExposure>
+			<maxMeshCount>4</maxMeshCount>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	
 	<!-- Saguaro cactus -->
 
 	<ThingDef ParentName="RWC_PlantBase">
