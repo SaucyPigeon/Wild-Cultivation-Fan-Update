@@ -1,5 +1,9 @@
 ﻿<Patch>
 
+	<!-- Change healroot spawn chance -->
+	
+	<!-- Tropical rainforest -->
+
 	<Operation Class="PatchOperationRemove">
 		<success>Always</success>
 		<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants/Plant_HealrootWild</xpath>
@@ -11,6 +15,8 @@
 		</value>
 	</Operation>
 
+	<!-- Tropical swamp -->
+
 	<Operation Class="PatchOperationRemove">
 		<success>Always</success>
 		<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants/Plant_HealrootWild</xpath>
@@ -21,6 +27,8 @@
 			<Plant_HealrootWild>0.01</Plant_HealrootWild>
 		</value>
 	</Operation>
+
+	<!-- Make agave plantable -->
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant/growDays</xpath>
@@ -58,6 +66,8 @@
 		</value>
 	</Operation>
 
+	<!-- Make grass plantable -->
+
 	<Operation Class="PatchOperationRemove">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName = "Plant_Grass"]/plant/sowTags</xpath>
@@ -70,6 +80,8 @@
 			</sowTags> 
 		</value>
 	</Operation>
+
+	<!-- Make tall grass plantable -->
 
 	<Operation Class="PatchOperationRemove">
 		<success>Always</success>

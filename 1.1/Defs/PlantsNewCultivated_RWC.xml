@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- Astragalus -->
+
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantCultivatedAstragalus</defName>
 		<label>astragalus</label>
@@ -35,6 +37,8 @@
 			<wildOrder>1</wildOrder>
 		</plant>
 	</ThingDef>
+
+	<!-- Brambles -->
 
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantCultivatedBrambles</defName>
@@ -71,6 +75,8 @@
 		</plant>
 	</ThingDef>
 
+	<!-- Bush -->
+
 	<ThingDef ParentName="RWC_BushBase">
 		<defName>PlantCultivatedBush</defName>
 		<label>bush</label>
@@ -91,6 +97,8 @@
 			<leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
+	
+	<!-- Clivia -->
 	
 	<ThingDef ParentName="RWC_BushBase">
 		<defName>PlantCultivatedClivia</defName>
@@ -116,6 +124,8 @@
 			</sowTags> 
 		</plant>
 	</ThingDef>
+
+	<!-- Low shrubs -->
 
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantCultivatedShrubLow</defName>
@@ -149,6 +159,8 @@
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
+	
+	<!-- Pincushion cactus -->
 	
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantCultivatedPincushionCactus</defName>
@@ -186,6 +198,8 @@
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
+
+	<!-- Saguaro cactus -->
 
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantCultivatedSaguaroCactus</defName>
@@ -241,6 +255,8 @@
 	
 	<!-- Actual seed defs used if "Seeds Please!" is installed -->
 
+	<!-- Agave seeds -->
+
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>Seed_Agave</defName>
 		<label>agave seeds</label>
@@ -248,6 +264,8 @@
 			<li>Plant_Agave</li>
 		</sources>
 	</SeedsPlease.SeedDef>
+	
+	<!-- Bramble seeds -->
 	
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedBrambles</defName>
@@ -261,6 +279,8 @@
 		</statBases>
 	</SeedsPlease.SeedDef>
 
+	<!-- Clivia seeds -->
+
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedClivia</defName>
 		<label>clivia seeds</label>
@@ -272,6 +292,8 @@
 			<MarketValue>3.0</MarketValue>
 		</statBases>
 	</SeedsPlease.SeedDef>
+
+	<!-- Saguaro seeds -->
 
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedSaguaro</defName>
