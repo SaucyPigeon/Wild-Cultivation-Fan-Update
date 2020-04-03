@@ -21,6 +21,10 @@
 		</v1.1>
 	</modDependenciesByVersion>
 	
+	<loadAfter>
+		<li>Makaru.FertilePlanet</li>
+	</loadAfter>
+	
 	<description>NOTE: I (Saucy_Pigeon) am not the original author of this mod. The original author is Rainbeau Flambe, who has provided permission for modders to use his mods as the basis of derivative mods on the condition of notifying him.
 
 =====
@@ -63,13 +67,15 @@ If you're using "Vegetable Garden," "[T] Expanded Cloth," or another mod that al
 
 "Wild Cultivation" is fully compatible with "Seeds Please!" If you have that mod installed, the wild versions of various plants will drop seeds which can be used to grow their cultivated counterparts.
 
+If using the mod "Fertile Planet", ensure that "Wild Cultivation" is loaded after it to avoid errors with lifeless tropical rainforests.
+
 =====
 
 Credits:
 
 Rainbeau Flambe, the original author.
 
-The mod utilizes Pardeike's "Harmony Patch Library." (No additional download is required, as the library is included with the mod.)
+The mod utilizes Pardeike's "Harmony Patch Library." (For 1.0, no additional download is required, as the library is included with the mod. For 1.1, please load the external mod before "Wild Cultivation".)
 
 Notfood and boundir, for updating compatibility for SeedsPlease.
 
