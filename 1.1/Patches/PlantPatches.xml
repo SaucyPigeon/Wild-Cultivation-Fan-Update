@@ -1,26 +1,69 @@
 ﻿<Patch>
 
-	<Operation Class="PatchOperationRemove">
+	<!--
+	Plants made cultivable by Wild Cultivation:
+	(changed)
+	- Agave*
+	- Grass*
+	- Tall grass*
+	
+	(added)
+	- Astragalus
+	- Brambles
+	- Bush
+	- Clivia
+	- Low shrubs
+	- Pinchusion cactus*
+	- Saguaro cactus
+	- Glowstool
+	- Agarilux*
+	- Bryolux
+	
+	*also made cultivable by Vegetable Garden Project
+	-->
+
+	<!--
+	Change healroot spawn chance 
+	
+	Fertile Planet adds its own spawn chance without checking, which can cause
+	lifeless tropical rainforests and swamps.
+	-->
+
+	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
-		<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants/Plant_HealrootWild</xpath>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
-		<value>
-			<Plant_HealrootWild>0.01</Plant_HealrootWild>
-		</value>
+		<mods>
+			<li>Fertile Planet</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!-- Tropical rainforest -->
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants/Plant_HealrootWild</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.01</Plant_HealrootWild>
+					</value>
+				</li>
+				
+				<!-- Tropical swamp -->
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants/Plant_HealrootWild</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.01</Plant_HealrootWild>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants/Plant_HealrootWild</xpath>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
-		<value>
-			<Plant_HealrootWild>0.01</Plant_HealrootWild>
-		</value>
-	</Operation>
+	<!-- Make agave plantable -->
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant/growDays</xpath>
@@ -58,30 +101,92 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName = "Plant_Grass"]/plant/sowTags</xpath>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName = "Plant_Grass"]/plant</xpath>
-		<value>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags> 
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName = "Plant_TallGrass"]/plant/sowTags</xpath>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName = "Plant_TallGrass"]/plant</xpath>
-		<value>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags> 
-		</value>
-	</Operation>
+	<!--
+	Make the following cultivable:
+	- Grass
+	- Tall grass
+	- Pincushion cactus
 	
+	(VGP adds its own patch, so avoid duplicate XML node and entries in growing menu)
+	-->
+
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!-- Tall grass -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "Plant_TallGrass"]/plant/sowTags</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "Plant_TallGrass"]/plant</xpath>
+					<value>
+						<sowTags>
+							<li>Ground</li>
+						</sowTags> 
+					</value>
+				</li>
+				
+				<!-- Grass -->
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName = "Plant_Grass"]/plant/sowTags</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "Plant_Grass"]/plant</xpath>
+					<value>
+						<sowTags>
+							<li>Ground</li>
+						</sowTags> 
+					</value>
+				</li>
+				
+				<!-- Pincushion cactus -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="RWC_PlantBase">
+							<defName>PlantCultivatedPincushionCactus</defName>
+							<label>pincushion cactus</label>
+							<description>A short cactus. It is so named because it resembles a pincushion.</description>
+							<statBases>
+								<MaxHitPoints>150</MaxHitPoints>
+								<Beauty>1</Beauty>
+								<Nutrition>0.25</Nutrition>
+							</statBases>
+							<graphicData>
+								<texPath>Things/Plant/PincushionCactus</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+							</graphicData>
+							<selectable>true</selectable>
+							<pathCost>30</pathCost>
+							<hideAtSnowDepth>1</hideAtSnowDepth>
+							<altitudeLayer>Item</altitudeLayer>
+							<ingestible />
+							<plant>
+								<fertilityMin>0.05</fertilityMin>
+								<fertilitySensitivity>0</fertilitySensitivity>
+								<growDays>2.5</growDays>
+								<sowMinSkill>4</sowMinSkill>
+								<sowTags>
+									<li>Ground</li>
+									<li>Decorative</li>
+								</sowTags> 
+								<visualSizeRange>
+									<min>0.40</min>
+									<max>0.65</max>
+								</visualSizeRange>
+								<topWindExposure>0.0</topWindExposure>
+								<maxMeshCount>4</maxMeshCount>
+								<wildOrder>2</wildOrder>
+							</plant>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
 </Patch>

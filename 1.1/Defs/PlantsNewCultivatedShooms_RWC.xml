@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- Glowstool -->
+
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>CultivatedGlowstool</defName>
 		<label>glowstool</label>
@@ -52,6 +54,8 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+	<!-- Agarilux -->
 
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>CultivatedAgarilux</defName>
@@ -109,6 +113,8 @@
 		</comps>
 	</ThingDef>
 
+	<!-- Bryolux -->
+
 	<ThingDef ParentName="RWC_PlantBase">
 		<defName>CultivatedBryolux</defName>
 		<label>bryolux</label>
@@ -156,6 +162,8 @@
 		</comps>
 	</ThingDef>
 
+	<!-- Glowstool seeds -->
+
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedGlowstool</defName>
 		<label>glowstool seeds</label>
@@ -168,6 +176,8 @@
 		</sources>
 	</SeedsPlease.SeedDef>
 
+	<!-- Agarilux seeds -->
+
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedAgarilux</defName>
 		<label>agarilux mushroom seeds</label>
@@ -179,6 +189,8 @@
 			<li>Agarilux</li>
 		</sources>
 	</SeedsPlease.SeedDef>
+	
+	<!-- Bryolux seeds -->
 
 	<SeedsPlease.SeedDef ParentName="RWC_SeedBase">
 		<defName>SeedBryolux</defName>

@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using Verse;
+using System.Reflection;
 
 namespace RWC_Code
 {
@@ -12,11 +13,7 @@ namespace RWC_Code
 			const string Id = "net.rainbeau.rimworld.mod.wildcultivation";
 			var harmony = new Harmony(Id);
 
-			// Will update to require Harmony as external mod soon
-			Log.Warning($"Wild Cultivation - Fan Update will be using Harmony as an external dependency when it next updates. To avoid wiping your mod list, please download and use Harmony now.");
-
-			harmony.Patch(AccessTools.Method(typeof(Designator_ZoneAdd_Growing), "CanDesignateCell"), new HarmonyMethod(typeof(Designator_ZoneAdd_Growing_RWC), "CanDesignateCellPrefix"), null);
-			harmony.Patch(AccessTools.Method(typeof(Designator_ZoneAdd_Growing), "CanDesignateCell"), null, new HarmonyMethod(typeof(Designator_ZoneAdd_Growing_RWC), "CanDesignateCellPostfix"));
+			harmony.PatchAll(Assembly.GetExecutingAssembly());
 
 			LongEventHandler.QueueLongEvent(Setup, "LibraryStartup", false, null);
 		}

@@ -20,7 +20,7 @@
 			</li>
 		</v1.1>
 	</modDependenciesByVersion>
-	
+		
 	<description>NOTE: I (Saucy_Pigeon) am not the original author of this mod. The original author is Rainbeau Flambe, who has provided permission for modders to use his mods as the basis of derivative mods on the condition of notifying him.
 
 =====
@@ -69,7 +69,7 @@ Credits:
 
 Rainbeau Flambe, the original author.
 
-The mod utilizes Pardeike's "Harmony Patch Library." (No additional download is required, as the library is included with the mod.)
+The mod utilizes Pardeike's "Harmony Patch Library." (For 1.0, no additional download is required, as the library is included with the mod. For 1.1, please load the external mod before "Wild Cultivation".)
 
 Notfood and boundir, for updating compatibility for SeedsPlease.
 
