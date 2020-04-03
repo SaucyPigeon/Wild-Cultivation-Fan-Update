@@ -1,7 +1,6 @@
 ﻿<Patch>
 
 	<!--
-	
 	Plants made cultivable by Wild Cultivation:
 	(changed)
 	- Agave*
@@ -21,35 +20,47 @@
 	- Bryolux
 	
 	*also made cultivable by Vegetable Garden Project
-	
 	-->
 
-	<!-- Change healroot spawn chance -->
+	<!--
+	Change healroot spawn chance 
 	
-	<!-- Tropical rainforest -->
+	Fertile Planet adds its own spawn chance without checking, which can cause
+	lifeless tropical rainforests and swamps.
+	-->
 
-	<Operation Class="PatchOperationRemove">
+	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
-		<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants/Plant_HealrootWild</xpath>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
-		<value>
-			<Plant_HealrootWild>0.01</Plant_HealrootWild>
-		</value>
-	</Operation>
-
-	<!-- Tropical swamp -->
-
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants/Plant_HealrootWild</xpath>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
-		<value>
-			<Plant_HealrootWild>0.01</Plant_HealrootWild>
-		</value>
+		<mods>
+			<li>Fertile Planet</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!-- Tropical rainforest -->
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants/Plant_HealrootWild</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.01</Plant_HealrootWild>
+					</value>
+				</li>
+				
+				<!-- Tropical swamp -->
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants/Plant_HealrootWild</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.01</Plant_HealrootWild>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
 	</Operation>
 
 	<!-- Make agave plantable -->

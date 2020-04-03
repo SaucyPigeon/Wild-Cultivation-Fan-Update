@@ -20,11 +20,7 @@
 			</li>
 		</v1.1>
 	</modDependenciesByVersion>
-	
-	<loadAfter>
-		<li>Makaru.FertilePlanet</li>
-	</loadAfter>
-	
+		
 	<description>NOTE: I (Saucy_Pigeon) am not the original author of this mod. The original author is Rainbeau Flambe, who has provided permission for modders to use his mods as the basis of derivative mods on the condition of notifying him.
 
 =====
@@ -66,8 +62,6 @@ You should be able to add "Wild Cultivation" to an existing saved game without t
 If you're using "Vegetable Garden," "[T] Expanded Cloth," or another mod that alters the harvest of cotton, "Wild Cultivation" will automatically adjust the harvest of wild cotton to match it.
 
 "Wild Cultivation" is fully compatible with "Seeds Please!" If you have that mod installed, the wild versions of various plants will drop seeds which can be used to grow their cultivated counterparts.
-
-If using the mod "Fertile Planet", ensure that "Wild Cultivation" is loaded after it to avoid errors with lifeless tropical rainforests.
 
 =====
 
