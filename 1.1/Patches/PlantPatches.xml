@@ -119,6 +119,7 @@
 			<operations>
 				<!-- Tall grass -->
 				<li Class="PatchOperationRemove">
+					<success>Always</success>
 					<xpath>Defs/ThingDef[defName = "Plant_TallGrass"]/plant/sowTags</xpath>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -148,9 +149,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "PlantCultivatedPincushionCactus"]/plant/sowTags</xpath>
 					<value>
-						<sowTags>
-							<li>Ground</li>
-						</sowTags>
+						<li>Ground</li>
 					</value>
 				</li>
 			</operations>
