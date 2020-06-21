@@ -4,8 +4,8 @@
 	Plants made cultivable by Wild Cultivation:
 	(changed)
 	- Agave*
-	- Grass*
-	- Tall grass*
+	- Grass*%
+	- Tall grass*%
 	
 	(added)
 	- Astragalus
@@ -20,6 +20,7 @@
 	- Bryolux
 	
 	*also made cultivable by Vegetable Garden Project
+	%also made cultivable by Vanilla Plants Expanded
 	-->
 
 	<!--
@@ -108,12 +109,42 @@
 	- Pincushion cactus
 	
 	(VGP adds its own patch, so avoid duplicate XML node and entries in growing menu)
+	(VPE adds tall grass and grass as well. but not pincushion cactus)
+	-->
+	
+	
+	<!--
+	if NOT VGP:
+		add pincushion cactus
+	if NOT (VGP OR VPE):
+		add tall grass
+		add grass
 	-->
 
 	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
 		<mods>
 			<li>VGP Vegetable Garden</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!-- Pincushion cactus -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "PlantCultivatedPincushionCactus"]/plant/sowTags</xpath>
+					<value>
+						<li>Ground</li>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>VGP Vegetable Garden</li>
+			<li>Vanilla Plants Expanded</li>
 		</mods>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
@@ -142,14 +173,6 @@
 						<sowTags>
 							<li>Ground</li>
 						</sowTags> 
-					</value>
-				</li>
-				
-				<!-- Pincushion cactus -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "PlantCultivatedPincushionCactus"]/plant/sowTags</xpath>
-					<value>
-						<li>Ground</li>
 					</value>
 				</li>
 			</operations>
