@@ -44,8 +44,8 @@
   <ItemGroup>
     <Compile Include="Designator_ZoneAdd_Growing_RWC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RWC_Initializer.cs" />
     <Compile Include="ThingDefOf.cs" />
+    <Compile Include="WildCultivationMod.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
@@ -53,6 +53,7 @@
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.0.0.9</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

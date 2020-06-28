@@ -1,24 +1,26 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using Verse;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
+using UnityEngine;
+using Verse;
+using System.Diagnostics;
 
 namespace RWC_Code
 {
-	[StaticConstructorOnStartup]
-	internal static class RWC_Initializer
+	public class WildCultivationMod : Mod
 	{
-		static RWC_Initializer()
+		public WildCultivationMod(ModContentPack content) : base(content)
 		{
-			const string Id = "net.rainbeau.rimworld.mod.wildcultivation";
+			const string Id = "net.saucypigeon.rimworld.mod.wildcultivation";
 			var harmony = new Harmony(Id);
-
 			harmony.PatchAll(Assembly.GetExecutingAssembly());
-
 			LongEventHandler.QueueLongEvent(Setup, "LibraryStartup", false, null);
 		}
 
-		public static void Setup()
+		private static void Setup()
 		{
 			// Update wild cotton harvest to standard cotton
 			ThingDef.Named("PlantWildCotton").plant.harvestedThingDef = ThingDefOf.Plant_Cotton.plant.harvestedThingDef;
@@ -29,5 +31,4 @@ namespace RWC_Code
 			ThingDef.Named("PlantWildDevilstrand").plant.harvestYield = ThingDefOf.Plant_Devilstrand.plant.harvestYield;
 		}
 	}
-    
 }
