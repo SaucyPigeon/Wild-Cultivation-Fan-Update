@@ -1,6 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- 
+	
+	Wild plants added by Wild Cultivation:
+	
+	- Corn
+	- Cotton
+	- Daylily
+	- Devilstrand
+	- Haygrass
+	- Hops
+	- Potato
+	- Psychoid
+	- Rice
+	- Rose
+	- Smokeleaf
+	
+	-->
+
 	<!-- Corn -->
 
 	<ThingDef ParentName="RWC_PlantBase">

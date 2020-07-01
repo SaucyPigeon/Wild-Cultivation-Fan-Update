@@ -48,17 +48,17 @@
 			<visualSizeRange>0.4~0.8</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.00</AridShrubland>
-				<BorealForest>0.01</BorealForest>
-				<Desert>0.00</Desert>
-				<ExtremeDesert>0.00</ExtremeDesert>
-				<TemperateForest>0.01</TemperateForest>
-				<TropicalRainforest>0.00</TropicalRainforest>
-				<Tundra>0.0</Tundra>
-				<ColdBog>0.0</ColdBog>
+				<AridShrubland>0.02</AridShrubland>
+				<BorealForest>0.02</BorealForest>
+				<Desert>0.02</Desert>
+				<ExtremeDesert>0.01</ExtremeDesert>
+				<TemperateForest>0.05</TemperateForest>
+				<TropicalRainforest>0.001</TropicalRainforest>
+				<Tundra>0.001</Tundra>
+				<ColdBog>0.01</ColdBog>
 				<!-- :) -->
-				<TemperateSwamp>0.01</TemperateSwamp>
-				<TropicalSwamp>0.0</TropicalSwamp>
+				<TemperateSwamp>0.03</TemperateSwamp>
+				<TropicalSwamp>0.001</TropicalSwamp>
 			</wildBiomes>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
@@ -98,15 +98,15 @@
 			<visualSizeRange>0.5~0.9</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.00</AridShrubland>
-				<BorealForest>0.00</BorealForest>
-				<Desert>0.00</Desert>
-				<ExtremeDesert>0.00</ExtremeDesert>
-				<TemperateForest>0.01</TemperateForest>
-				<TropicalRainforest>0.005</TropicalRainforest>
-				<Tundra>0.0</Tundra>
-				<ColdBog>0.0</ColdBog>
-				<TemperateSwamp>0.005</TemperateSwamp>
+				<AridShrubland>0.02</AridShrubland>
+				<BorealForest>0.02</BorealForest>
+				<Desert>0.02</Desert>
+				<ExtremeDesert>0.01</ExtremeDesert>
+				<TemperateForest>0.05</TemperateForest>
+				<TropicalRainforest>0.001</TropicalRainforest>
+				<Tundra>0.001</Tundra>
+				<ColdBog>0.001</ColdBog>
+				<TemperateSwamp>0.03</TemperateSwamp>
 				<TropicalSwamp>0.001</TropicalSwamp>
 			</wildBiomes>
 
@@ -116,7 +116,7 @@
 	</ThingDef>
 	
 	<!-- Pepper -->
-		<ThingDef ParentName="RWC_PlantBase">
+	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildPepper</defName>
 		<label>wild pepper plant</label>
 		<description>Tiny, spicy, crimson pods often used in sauces, relishes, or powders. While the flavor itself is mild the capsaicin contained inside means humans find them oddly addicting, if painful when consumed in mass. Animals are known to avoid eating them entirely.</description>
@@ -149,16 +149,16 @@
 			<visualSizeRange>0.3~0.8</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.01</AridShrubland>
+				<AridShrubland>0.05</AridShrubland>
 				<BorealForest>0.00</BorealForest>
-				<Desert>0.001</Desert>
-				<ExtremeDesert>0.00</ExtremeDesert>
-				<TemperateForest>0.00</TemperateForest>
-				<TropicalRainforest>0.01</TropicalRainforest>
+				<Desert>0.01</Desert>
+				<ExtremeDesert>0.001</ExtremeDesert>
+				<TemperateForest>0.03</TemperateForest>
+				<TropicalRainforest>0.005</TropicalRainforest>
 				<Tundra>0.0</Tundra>
 				<ColdBog>0.0</ColdBog>
 				<TemperateSwamp>0.0</TemperateSwamp>
-				<TropicalSwamp>0.005</TropicalSwamp>
+				<TropicalSwamp>0.0</TropicalSwamp>
 			</wildBiomes>
 
 			<wildOrder>2</wildOrder>
@@ -169,7 +169,7 @@
 	
 	<!-- Pea -->
 	
-		<ThingDef ParentName="RWC_PlantBase">
+	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildPea</defName>
 		<label>wild pea plant</label>
 		<thingClass>VanillaPlantsExpanded.Plant_RainAffected</thingClass>
@@ -200,16 +200,16 @@
 			<visualSizeRange>0.3~1</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.01</AridShrubland>
-				<BorealForest>0.00</BorealForest>
-				<Desert>0.00</Desert>
-				<ExtremeDesert>0.00</ExtremeDesert>
-				<TemperateForest>0.01</TemperateForest>
-				<TropicalRainforest>0.01</TropicalRainforest>
-				<Tundra>0.0</Tundra>
-				<ColdBog>0.0</ColdBog>
-				<TemperateSwamp>0.01</TemperateSwamp>
-				<TropicalSwamp>0.01</TropicalSwamp>
+				<AridShrubland>0.02</AridShrubland>
+				<BorealForest>0.01</BorealForest>
+				<Desert>0.01</Desert>
+				<ExtremeDesert>0.0</ExtremeDesert>
+				<TemperateForest>0.05</TemperateForest>
+				<TropicalRainforest>0.001</TropicalRainforest>
+				<Tundra>0.001</Tundra>
+				<ColdBog>0.001</ColdBog>
+				<TemperateSwamp>0.03</TemperateSwamp>
+				<TropicalSwamp>0.001</TropicalSwamp>
 			</wildBiomes>
 
 			<wildOrder>2</wildOrder>
@@ -251,16 +251,16 @@
 			<visualSizeRange>0.3~1</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.00</AridShrubland>
-				<BorealForest>0.00</BorealForest>
-				<Desert>0.00</Desert>
-				<ExtremeDesert>0.00</ExtremeDesert>
-				<TemperateForest>0.00</TemperateForest>
+				<AridShrubland>0.05</AridShrubland>
+				<BorealForest>0.01</BorealForest>
+				<Desert>0.02</Desert>
+				<ExtremeDesert>0.001</ExtremeDesert>
+				<TemperateForest>0.03</TemperateForest>
 				<TropicalRainforest>0.01</TropicalRainforest>
-				<Tundra>0.0</Tundra>
+				<Tundra>0.001</Tundra>
 				<ColdBog>0.0</ColdBog>
 				<TemperateSwamp>0.0</TemperateSwamp>
-				<TropicalSwamp>0.005</TropicalSwamp>
+				<TropicalSwamp>0.0</TropicalSwamp>
 			</wildBiomes>
 
 			<wildOrder>2</wildOrder>
@@ -269,7 +269,7 @@
 	</ThingDef>
 
 	<!-- Cabbage -->
-		<ThingDef ParentName="RWC_PlantBase">
+	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildCabbage</defName>
 		<label>wild cabbage plant</label>
 		<thingClass>VanillaPlantsExpanded.Plant_StopsGrowingInToxins</thingClass>
@@ -322,7 +322,7 @@
 	
 	<!-- Beet -->
 	
-		<ThingDef ParentName="RWC_PlantBase">
+	<ThingDef ParentName="RWC_PlantBase">
 		<defName>PlantWildBeet</defName>
 		<label>wild beet plant</label>
 		<thingClass>VanillaPlantsExpanded.Plant_WinterResistant</thingClass>
