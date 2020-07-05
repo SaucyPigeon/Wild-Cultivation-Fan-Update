@@ -127,7 +127,7 @@ namespace RWC_Code
 				singleX += textSize.x + 6f;
 				var rect8 = new Rect(singleX, singleY, 100f, 30f);
 				string buffer = "Foo";
-				Widgets.TextFieldNumeric(rect8, ref record.Value, ref buffer);
+				Widgets.TextFieldNumeric(rect8, ref record., ref buffer);
 			}
 
 		}
