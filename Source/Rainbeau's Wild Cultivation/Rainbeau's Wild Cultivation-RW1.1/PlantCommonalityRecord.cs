@@ -46,7 +46,11 @@ namespace RWC_Code
 
 		public static bool operator==(PlantCommonalityRecord x, PlantCommonalityRecord y)
 		{
-			return x.plant == y.plant && x.biome == y.biome;
+			if (x == null)
+			{
+				return y == null;
+			}
+			return x.biome == y.biome && x.plant == y.plant;
 		}
 
 		public static bool operator!=(PlantCommonalityRecord x, PlantCommonalityRecord y)
