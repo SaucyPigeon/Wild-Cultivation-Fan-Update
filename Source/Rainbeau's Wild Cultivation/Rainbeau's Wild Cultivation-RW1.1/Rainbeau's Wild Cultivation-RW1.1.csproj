@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Debug.cs" />
     <Compile Include="Guard.cs" />
     <Compile Include="Patches\BiomeDef_CachePlantCommalitiesIfShould.cs" />
     <Compile Include="Patches\Designator_ZoneAdd_Growing_RWC.cs" />
@@ -50,10 +49,8 @@
     <Compile Include="PlantCommonalityRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingDefOf.cs" />
-    <Compile Include="WidgetScrollView.cs" />
     <Compile Include="WildCultivationMod.cs" />
     <Compile Include="WildCultivationSettings.cs" />
-    <Compile Include="WildCultivationWidgets.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
