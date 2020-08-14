@@ -12,24 +12,11 @@ namespace RWC_Code
 {
 	public class WildCultivationMod : Mod
 	{
-		public static WildCultivationSettings Settings;
-
-		public override string SettingsCategory()
-		{
-			return "WildCultivation.ModName".Translate();
-		}
-
-		public override void DoSettingsWindowContents(Rect inRect)
-		{
-			Settings.DoWindowContents(inRect);
-		}
-
 		public WildCultivationMod(ModContentPack content) : base(content)
 		{
 			const string Id = "net.saucypigeon.rimworld.mod.wildcultivation";
 			var harmony = new Harmony(Id);
 			harmony.PatchAll(Assembly.GetExecutingAssembly());
-			Settings = GetSettings<WildCultivationSettings>();
 			LongEventHandler.QueueLongEvent(Setup, "LibraryStartup", false, null);
 		}
 
