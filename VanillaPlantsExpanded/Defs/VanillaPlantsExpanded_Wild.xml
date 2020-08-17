@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<!--
@@ -48,15 +49,16 @@
 			<visualSizeRange>0.4~0.8</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.1</AridShrubland>
-				<BorealForest>0.1</BorealForest>
+				<AridShrubland>0.01</AridShrubland>
+				<BorealForest>0.05</BorealForest>
 				<Desert>0.02</Desert>
 				<ExtremeDesert>0.01</ExtremeDesert>
-				<TemperateForest>0.1</TemperateForest>
+				<TemperateForest>0.05</TemperateForest>
 				<TropicalRainforest>0.001</TropicalRainforest>
 				<Tundra>0.001</Tundra>
-				<ColdBog>0.1</ColdBog>
-				<TemperateSwamp>0.2</TemperateSwamp>
+				<!---->
+				<ColdBog>0.07</ColdBog>
+				<TemperateSwamp>0.05</TemperateSwamp>
 				<TropicalSwamp>0.001</TropicalSwamp>
 			</wildBiomes>
 			<wildOrder>2</wildOrder>
@@ -97,15 +99,15 @@
 			<visualSizeRange>0.5~0.9</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.1</AridShrubland>
-				<BorealForest>0.1</BorealForest>
+				<AridShrubland>0.01</AridShrubland>
+				<BorealForest>0.05</BorealForest>
 				<Desert>0.02</Desert>
 				<ExtremeDesert>0.01</ExtremeDesert>
-				<TemperateForest>0.1</TemperateForest>
+				<TemperateForest>0.05</TemperateForest>
 				<TropicalRainforest>0.001</TropicalRainforest>
 				<Tundra>0.001</Tundra>
 				<ColdBog>0.001</ColdBog>
-				<TemperateSwamp>0.1</TemperateSwamp>
+				<TemperateSwamp>0.025</TemperateSwamp>
 				<TropicalSwamp>0.001</TropicalSwamp>
 			</wildBiomes>
 
@@ -148,11 +150,11 @@
 			<visualSizeRange>0.3~0.8</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.1</AridShrubland>
+				<AridShrubland>0.05</AridShrubland>
 				<BorealForest>0.00</BorealForest>
 				<Desert>0.1</Desert>
 				<ExtremeDesert>0.00</ExtremeDesert>
-				<TemperateForest>0.1</TemperateForest>
+				<TemperateForest>0.05</TemperateForest>
 				<TropicalRainforest>0.005</TropicalRainforest>
 				<Tundra>0.0</Tundra>
 				<ColdBog>0.0</ColdBog>
@@ -203,11 +205,11 @@
 				<BorealForest>0.01</BorealForest>
 				<Desert>0.01</Desert>
 				<ExtremeDesert>0.0</ExtremeDesert>
-				<TemperateForest>0.1</TemperateForest>
+				<TemperateForest>0.05</TemperateForest>
 				<TropicalRainforest>0.0</TropicalRainforest>
-				<Tundra>0.05</Tundra>
-				<ColdBog>0.05</ColdBog>
-				<TemperateSwamp>0.1</TemperateSwamp>
+				<Tundra>0.005</Tundra>
+				<ColdBog>0.03</ColdBog>
+				<TemperateSwamp>0.025</TemperateSwamp>
 				<TropicalSwamp>0.001</TropicalSwamp>
 			</wildBiomes>
 
@@ -250,16 +252,16 @@
 			<visualSizeRange>0.3~1</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.10</AridShrubland>
-				<BorealForest>0.01</BorealForest>
+				<AridShrubland>0.05</AridShrubland>
+				<BorealForest>0.0</BorealForest>
 				<Desert>0.05</Desert>
 				<ExtremeDesert>0.001</ExtremeDesert>
-				<TemperateForest>0.1</TemperateForest>
-				<TropicalRainforest>0.1</TropicalRainforest>
+				<TemperateForest>0.01</TemperateForest>
+				<TropicalRainforest>0.05</TropicalRainforest>
 				<Tundra>0.00</Tundra>
 				<ColdBog>0.0</ColdBog>
 				<TemperateSwamp>0.0</TemperateSwamp>
-				<TropicalSwamp>0.1</TropicalSwamp>
+				<TropicalSwamp>0.05</TropicalSwamp>
 			</wildBiomes>
 
 			<wildOrder>2</wildOrder>
@@ -301,14 +303,14 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.00</AridShrubland>
-				<BorealForest>0.1</BorealForest>
+				<BorealForest>0.05</BorealForest>
 				<Desert>0.00</Desert>
 				<ExtremeDesert>0.00</ExtremeDesert>
-				<TemperateForest>0.1</TemperateForest>
+				<TemperateForest>0.05</TemperateForest>
 				<TropicalRainforest>0.00</TropicalRainforest>
 				<Tundra>0.0</Tundra>
-				<ColdBog>0.1</ColdBog>
-				<TemperateSwamp>0.1</TemperateSwamp>
+				<ColdBog>0.03</ColdBog>
+				<TemperateSwamp>0.025</TemperateSwamp>
 				<TropicalSwamp>0.0</TropicalSwamp>
 			</wildBiomes>
 
@@ -352,14 +354,14 @@
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.005</AridShrubland>
-				<BorealForest>0.1</BorealForest>
+				<BorealForest>0.05</BorealForest>
 				<Desert>0.00</Desert>
 				<ExtremeDesert>0.00</ExtremeDesert>
 				<TemperateForest>0.01</TemperateForest>
 				<TropicalRainforest>0.00</TropicalRainforest>
 				<Tundra>0.0</Tundra>
-				<ColdBog>0.1</ColdBog>
-				<TemperateSwamp>0.1</TemperateSwamp>
+				<ColdBog>0.025</ColdBog>
+				<TemperateSwamp>0.025</TemperateSwamp>
 				<TropicalSwamp>0.0</TropicalSwamp>
 			</wildBiomes>
 
@@ -399,11 +401,11 @@
 			<visualSizeRange>0.3~1</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
-				<AridShrubland>0.1</AridShrubland>
+				<AridShrubland>0.05</AridShrubland>
 				<BorealForest>0.00</BorealForest>
-				<Desert>0.00</Desert>
+				<Desert>0.02</Desert>
 				<ExtremeDesert>0.00</ExtremeDesert>
-				<TemperateForest>0.1</TemperateForest>
+				<TemperateForest>0.05</TemperateForest>
 				<TropicalRainforest>0.005</TropicalRainforest>
 				<Tundra>0.0</Tundra>
 				<ColdBog>0.0</ColdBog>

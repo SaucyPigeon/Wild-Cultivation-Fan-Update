@@ -12,7 +12,7 @@
 	<v1.2>
 		<li>/</li>
 		<li>1.2</li>
-		<li IfModActive="VanillaPlantsExpanded.VPlantsE">VanillaPlantsExpanded</li>
+		<li IfModActive="VanillaExpanded.VPlantsE">VanillaPlantsExpanded</li>
 	</v1.2>
 
 </loadFolders>
