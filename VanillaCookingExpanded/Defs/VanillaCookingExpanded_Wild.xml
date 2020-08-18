@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--
+	
+	Add the following wild plants:
+	
+	Sugarcane
+	Allspice
+	Wheat
+	
+	-->
+	
+	
+	<!-- Sugarcane -->
+	
+	<ThingDef ParentName="RWC_PlantBase">
+		<defName>PlantWildSugarcane</defName>
+		<label>wild sugarcane plant</label>
+		<description>A thick, tall, tropical grass with jointed stems. While not exactly the most nutritious thing to eat on its own, this genetically modified sugarcane is easily milled into sugar and then used for a variety of culinary creations - Particularly desserts.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_SugarCane</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>VCE_RawSugar</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<harvestWork>200</harvestWork>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>12</growDays>
+			<visualSizeRange>0.4~1.2</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildBiomes>
+				<AridShrubland>0.1</AridShrubland>
+				<BorealForest>0.1</BorealForest>
+				<Desert>0.1</Desert>
+				<ExtremeDesert>0.1</ExtremeDesert>
+				<TemperateForest>0.1</TemperateForest>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<Tundra>0.1</Tundra>
+				<ColdBog>0.1</ColdBog>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalSwamp>0.1</TropicalSwamp>
+			</wildBiomes>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+	
+	<!-- Allspice -->
+	
+	<ThingDef ParentName="RWC_PlantBase">
+		<defName>PlantWildAllspice</defName>
+		<label>wild allspice plant</label>
+		<description>An anomalous, leafy vine bearing tiny unpalatable green fruits. When ground finely during cooking the fruits release a complex, peppery flavor, perfect for spicing dishes.</description>
+		<statBases>
+			<MaxHitPoints>65</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Allspice</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>0.50</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawSpices</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<harvestWork>200</harvestWork>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6.4</growDays>
+			<visualSizeRange>0.4~1</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildBiomes>
+				<AridShrubland>0.1</AridShrubland>
+				<BorealForest>0.1</BorealForest>
+				<Desert>0.1</Desert>
+				<ExtremeDesert>0.1</ExtremeDesert>
+				<TemperateForest>0.1</TemperateForest>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<Tundra>0.1</Tundra>
+				<ColdBog>0.1</ColdBog>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalSwamp>0.1</TropicalSwamp>
+			</wildBiomes>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
+	<!-- Wheat -->
+	
+	<ThingDef ParentName="RWC_PlantBase">
+		<defName>PlantWildWheat</defName>
+		<label>wild wheat plant</label>
+		<description>An amber cereal plant that takes almost an entire growing season to come to fruition. While fragile and time-consuming, this wheat has been genetically engineered to gently break into flour with a mere touch.</description>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Wheat</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>40</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>VCE_Flour</harvestedThingDef>
+			<harvestYield>18</harvestYield>
+			<harvestWork>200</harvestWork>
+			<topWindExposure>0.2</topWindExposure>
+			<growDays>13</growDays>			
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildBiomes>
+				<AridShrubland>0.1</AridShrubland>
+				<BorealForest>0.1</BorealForest>
+				<Desert>0.1</Desert>
+				<ExtremeDesert>0.1</ExtremeDesert>
+				<TemperateForest>0.1</TemperateForest>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<Tundra>0.1</Tundra>
+				<ColdBog>0.1</ColdBog>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalSwamp>0.1</TropicalSwamp>
+			</wildBiomes>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
+</Defs>

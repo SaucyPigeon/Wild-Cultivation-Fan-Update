@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--
+	
+	Add the following wild plants:
+	
+	Soybean
+	Wasabi
+	
+	-->
+	
+	
+	<!-- Soybean -->
+	
+	<ThingDef ParentName="RWC_PlantBase">
+		<defName>PlantWildSoybean</defName>
+		<label>wild soybean plant</label>
+		<thingClass>VanillaSushiExpanded.Plant_NarrowTemperatures</thingClass>
+		<description>A species of legume widely grown for its edible bean, which has numerous uses. Soybean plants grow quite fast, but they are very sensitive to temperature, with optimum growing conditions in mean temperatures of 20 to 30 °C (68 to 86 °F). Temperatures outside that range stunt growth significantly.</description>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Nutrition>0.18</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Soybean</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawSoybean</harvestedThingDef>
+			<harvestYield>7</harvestYield>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>3</growDays>
+			<visualSizeRange>0.5~1</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildBiomes>
+				<AridShrubland>0.1</AridShrubland>
+				<BorealForest>0.1</BorealForest>
+				<Desert>0.1</Desert>
+				<ExtremeDesert>0.1</ExtremeDesert>
+				<TemperateForest>0.1</TemperateForest>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<Tundra>0.1</Tundra>
+				<ColdBog>0.1</ColdBog>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalSwamp>0.1</TropicalSwamp>
+			</wildBiomes>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_Soybean_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	
+	<!-- Wasabi -->
+	
+	<ThingDef ParentName="RWC_PlantBase">
+		<defName>PlantWildWasabi</defName>
+		<label>wild wasabi plant</label>
+		<thingClass>VanillaSushiExpanded.Plant_NeedsWater</thingClass>
+		<description>A plant of the horseradish family. A paste made from its ground rhizomes is used as a pungent condiment for sushi and other foods. It is similar in taste to hot mustard rather than chili peppers in that it stimulates the nose more than the tongue. Wasabi is widely considered to be one of the most difficult plants to grow, since it needs a temperate, extremely humid environment. It will receive a growth penalty if less than 20 tiles of water are found in a 6 tile radius.</description>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Wasabi</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestedThingDef>VCE_RawWasabi</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<harvestWork>200</harvestWork>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>12</growDays>			
+			<visualSizeRange>0.4~1.2</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildBiomes>
+				<AridShrubland>0.1</AridShrubland>
+				<BorealForest>0.1</BorealForest>
+				<Desert>0.1</Desert>
+				<ExtremeDesert>0.1</ExtremeDesert>
+				<TemperateForest>0.1</TemperateForest>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<Tundra>0.1</Tundra>
+				<ColdBog>0.1</ColdBog>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalSwamp>0.1</TropicalSwamp>
+			</wildBiomes>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<immatureGraphicPath>Things/Plant/Crops/VCE_Wasabi_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	
+</Defs>
